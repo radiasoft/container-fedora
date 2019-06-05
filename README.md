@@ -1,6 +1,6 @@
 # RadiaSoft Fedora Docker Image (radiasoft/fedora)
 
-fedora:27 with
+Fedora with
 [redhat-base](https://github.com/radiasoft/download/tree/master/installers/redhat-base)
 applied.
 
