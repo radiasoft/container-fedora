@@ -4,7 +4,6 @@ build_is_public=
 build_want_yum_update=1
 
 build_as_root() {
-    umask 022
     install_repo_eval redhat-base
 }
 
