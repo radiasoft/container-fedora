@@ -4,8 +4,8 @@ build_is_public=
 build_want_yum_update=1
 
 build_as_root() {
-    build_yum install build_yum langpacks-en
     install_repo_eval redhat-base
+    build_yum install build_yum langpacks-en
 }
 
 build_as_run_user() {
