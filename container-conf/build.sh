@@ -5,7 +5,7 @@ build_want_yum_update=1
 
 build_as_root() {
     install_repo_eval redhat-base
-    build_yum install build_yum langpacks-en
+    build_yum install langpacks-en
 }
 
 build_as_run_user() {
