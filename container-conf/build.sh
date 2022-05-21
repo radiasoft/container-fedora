@@ -1,11 +1,16 @@
 #!/bin/bash
+build_docker_entrypoint='["/rsentry"]'
+build_dockerfile_aux="USER $build_run_user"
 build_fedora_base_image
-build_is_public=
+build_is_public=1
 build_want_yum_update=1
 
 build_as_root() {
     install_repo_eval redhat-base
     build_yum install langpacks-en
+    export build_run_user_home
+    build_replace_vars rsentry.sh /rsentry
+    chmod a=rx /rsentry
 }
 
 build_as_run_user() {
