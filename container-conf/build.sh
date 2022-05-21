@@ -1,6 +1,5 @@
 #!/bin/bash
 build_docker_entrypoint='["/rsentry"]'
-build_dockerfile_aux="USER $build_run_user"
 build_fedora_base_image
 build_is_public=1
 build_want_yum_update=1
