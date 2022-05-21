@@ -3,6 +3,7 @@ build_docker_entrypoint='["/rsentry"]'
 build_fedora_base_image
 build_is_public=1
 build_want_yum_update=1
+build_docker_user=$build_run_user
 
 build_as_root() {
     install_repo_eval redhat-base
