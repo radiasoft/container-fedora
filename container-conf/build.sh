@@ -1,6 +1,7 @@
 #!/bin/bash
 build_docker_entrypoint='["/rsentry"]'
 build_fedora_base_image
+build_image_name=radiasoft/fedora
 build_is_public=1
 build_want_yum_update=1
 
