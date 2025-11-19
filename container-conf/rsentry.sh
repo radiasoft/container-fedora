@@ -3,7 +3,7 @@
 if (( $EUID != 0 )); then
     # No core files. User can always raise this limit.
     ulimit -c 0
-    unset $(compgen -A variable | egrep '^(PYTHON|PYENV|VIRTUAL)')
+    unset $(compgen -A variable | grep -E '^(PYTHON|PYENV|VIRTUAL)')
     export HOME={build_run_user_home}
     export PYENV_ROOT=$HOME/.pyenv
     source "$HOME"/.bashrc >& /dev/null
